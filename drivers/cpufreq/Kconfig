@@ -115,8 +115,6 @@ config CPU_FREQ_DEFAULT_GOV_INTERACTIVE
 	  loading your cpufreq low-level hardware driver, using the
 	  'interactive' governor for latency-sensitive workloads.
 
-<<<<<<< HEAD
-=======
 config CPU_FREQ_DEFAULT_GOV_DANCEDANCE
             bool "dancedance"
             select CPU_FREQ_GOV_DANCEDANCE
@@ -132,7 +130,6 @@ config CPU_FREQ_DEFAULT_GOV_ZZMOOVE
 	  frequency lookup tables and optimized scaling triggers instead 
 	  % frequency steps to get smooth up/downscaling dependant on CPU load.
 
->>>>>>> 4a41b22... cpufreq: add zzmoove
 endchoice
 
 config CPU_FREQ_GOV_PERFORMANCE
