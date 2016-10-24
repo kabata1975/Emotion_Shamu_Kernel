@@ -693,15 +693,9 @@ static struct timed_output_dev to_dev = {
 	.enable = vibrator_enable,
 };
 
-<<<<<<< HEAD
-void vibrate(int strength)
-{
-        vibrator_enable(&to_dev, strength);
-=======
 void set_vibrate(int value)
 {
 	vibrator_enable(&to_dev, value);
->>>>>>> 7f08b3e... Wake gestures: sweep2wake, sweep2sleep and doubletap2wake
 }
 
 static void drv260x_update_init_sequence(unsigned char *seq, int size,

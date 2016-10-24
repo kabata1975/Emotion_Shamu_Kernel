@@ -1547,14 +1547,9 @@ static void mxt_proc_t93_messages(struct mxt_data *data, u8 *msg)
 		struct device *dev = &data->client->dev;
 		struct input_dev *input_dev = data->input_dev;
 
-<<<<<<< HEAD
-		vibrate(VIBRATE_STRENGTH);
-
-=======
 #ifdef CONFIG_WAKE_GESTURES
 		set_vibrate(vib_strength);
 #endif
->>>>>>> 7f08b3e... Wake gestures: sweep2wake, sweep2sleep and doubletap2wake
 		input_report_key(input_dev, KEY_POWER, 1);
 		input_report_key(input_dev, KEY_POWER, 0);
 		input_sync(input_dev);
